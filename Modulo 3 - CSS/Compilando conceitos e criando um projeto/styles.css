@@ -1,0 +1,10 @@
+aside h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 75px;
+}
+
+aside h1 span {
+  color: #ff5678;
+}
