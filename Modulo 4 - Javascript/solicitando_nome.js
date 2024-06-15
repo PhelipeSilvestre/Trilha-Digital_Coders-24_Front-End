@@ -1,5 +1,16 @@
-const readlineSync = require('readline-sync');
+const prompt = require('readline-sync');
 
-const idade = readlineSync.question('Qual a sua idade? ');
+const idade = Number(prompt.question('Qual é a sua idade? '));
 
-console.log(idade);
+if (idade >= 18) {
+    console.log('Você é maior de idade');
+
+} else {
+    console.log('Você é menor de idade');
+}
+
+
+// Exemplo operador ternário	
+const nota = Number(prompt.question('Qual é a sua nota? '));
+
+nota >= 7 ? console.log('Aprovado') : console.log('Reprovado');
