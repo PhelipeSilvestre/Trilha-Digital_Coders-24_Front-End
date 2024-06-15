@@ -6,6 +6,7 @@
 
 :root {
   font-size: 62.5%;
+  --default-border: 0.1rem solid rgb(0, 0, 0, 0.15);
 }
 
 body {
@@ -45,7 +46,7 @@ main h2 span {
 main {
   width: 60rem;
   height: 52rem;
-  border: 0.1rem solid rgb(0, 0, 0, 0.15);
+  border: var(--default-border);
   padding: 4.4rem 5.7rem;
   border-radius: 1.2rem;
 }
@@ -91,4 +92,24 @@ main footer a {
   display: block;
   text-align: center;
   color: #000;
+}
+
+/* Estilização cadastro-entidade */
+
+main form label {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: lowercase;
+  margin-bottom: 1rem;
+  display: block;
+  margin-top: 2.4rem;
+}
+
+main form input {
+  width: 489px;
+  height: 5.5rem;
+
+  background-color: #ffffff;
+  border: var(--default-border);
+  border-radius: 1.2rem;
 }
